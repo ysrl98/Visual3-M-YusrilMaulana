@@ -3,11 +3,9 @@ import mysql.connector
 mydb = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    password = '',
-    database = "db_penjualan"
+    password = ''
 )
 
 mycursor = mydb.cursor()
-mycursor.execute('desc kategori')
-for x in mycursor:
-    print(x)
+mycursor.execute('CREATE DATABASE penjualan_db')
+print("Database dibuat")
