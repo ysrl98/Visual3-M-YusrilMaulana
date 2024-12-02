@@ -7,5 +7,5 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-mycursor.execute('CREATE DATABASE penjualan_db')
+mycursor.execute('CREATE DATABASE db_penjualan')
 print("Database dibuat")
